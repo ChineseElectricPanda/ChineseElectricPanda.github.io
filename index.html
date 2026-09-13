@@ -1,6 +1,392 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-<body>
-<h1>Hello World!</h1>
-</body>
+  <head>
+    <link rel="icon" href="favicon.ico" />
+    <title>Hanzhi Wang for Burnaby</title>
+    <style>
+      * {
+        margin: 0;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+      }
+
+      body {
+        background-color: #5e9332;
+      }
+
+      h1 {
+        font-size: 3em;
+        color: white;
+      }
+
+      h2 {
+        margin-top: 1em;
+        color: white;
+      }
+
+      p {
+        margin-top: 1em;
+      }
+
+      a {
+        color: white;
+      }
+
+      a:hover {
+        color: rgb(200, 200, 200);
+      }
+
+      header {
+        position: fixed;
+        background: #5e9332;
+        width: 100%;
+      }
+
+      nav > ul {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        list-style: none;
+        align-items: center;
+        height: 4em;
+        gap: 1em;
+        padding-left: 2em;
+      }
+
+      .nav-item {
+        font-weight: bold;
+        font-size: 1.2em;
+      }
+
+      .nav-item > a {
+        text-decoration: none;
+      }
+      .nav-item > a:hover {
+        color: rgb(222, 222, 222);
+      }
+
+      section {
+        display: flex;
+        background-size: cover;
+        background-position: center;
+      }
+      section.content-right {
+        justify-content: flex-end;
+      }
+
+      #about {
+        padding-top: 4em;
+        background-image: url("me.jpeg");
+        background-position: top right;
+        
+      }
+      #housing {
+        background-image: url("construction.jpg");
+        background-position: top;
+      }
+      #education {
+        background-image: url("sfu.jpg");
+      }
+      #community {
+        background-image: url("parks.jpg");
+      }
+      #transportation {
+        background-image: url("bus.jpg");
+      }
+
+      .aside {
+        width: 100%;
+        color: rgb(222, 222, 222);
+        background-color: rgba(20, 20, 20, 0.9);
+        margin-top: 20em;
+      }
+
+      .aside-content {
+        margin: 2em;
+      }
+
+      @media (min-width: 768px) {
+        nav > ul {
+          padding-left: 4em;
+        }
+        .aside {
+          width: 50%;
+          min-width: 600px;
+          margin-top: 0;
+        }
+        .aside-left {
+          background: linear-gradient(
+            270deg,
+            transparent 0%,
+            rgba(20, 20, 20, 0.9) 10%
+          );
+          padding-right: 5%;
+        }
+        .aside-right {
+          background: linear-gradient(
+            90deg,
+            transparent 0%,
+            rgba(20, 20, 20, 0.9) 10%
+          );
+          padding-left: 5%;
+        }
+        .aside-content {
+          margin: 4em;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div></div>
+      <nav>
+        <ul>
+          <li class="nav-item">
+            <a href="#about">About me</a>
+          </li>
+          <li class="nav-item">
+            <a href="#housing">Housing</a>
+          </li>
+          <li class="nav-item">
+            <a href="#education">Education</a>
+          </li>
+          <li class="nav-item">
+            <a href="#transportation">Transportation</a>
+          </li>
+          <li class="nav-item">
+            <a href="#community">Community</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <section id="about" class="content-right">
+      <div class="aside aside-right">
+        <div class="aside-content">
+          <h1>About Me</h1>
+          <p>Hi! I'm Hanzhi.</p>
+          <h2>Why I'm running</h2>
+          <p>
+            I first started thinking about running for mayor after the last
+            Burnaby election, which was unopposed. While I have no issue with
+            our current mayor Mike Hurley, an uncontested election did not seem
+            very democratic.
+          </p>
+          <p>
+            As I thought more about the issues facing Burnaby today, I realized
+            that while we are doing a lot of things right, there are so many
+            things we could &mdash; and <strong>should</strong> &mdash; be doing
+            better. In today's world, trying to appease to the status quo is no
+            longer enough &mdash; we need new and radical ideas if we want
+            <strong>everyone</strong> to thrive.
+          </p>
+          <p>
+            Read on below to see how I plan to build a better Burnaby, for
+            <strong>everyone</strong>.
+          </p>
+          <h2>Contact me</h2>
+          <p>
+            Email: <a href="mailto:hanzhiw@hotmail.com">hanzhiw@hotmail.com</a>
+          </p>
+          <p>
+            <sub><em>This site is made by humans, for humans.</em></sub>
+          </p>
+        </div>
+      </div>
+    </section>
+    <section id="housing">
+      <div class="aside aside-left">
+        <div class="aside-content">
+          <h1>Housing</h1>
+          <p>
+            The Metro Vancouver region's housing crisis is a long-standing issue
+            that successive councils have been ineffective in solving. The high
+            cost of housing in Burnaby &mdash; one of the highest in Canada and
+            in the world &mdash; is <strong>not</strong> a ranking that we
+            should be proud of.
+          </p>
+          <p>
+            Housing is a basic human right and it's clear that our current
+            approach isn't enough. I will lead a bold shift in our approach to
+            housing and zoning to remove red tape and get shovels in the ground
+            to build the housing that this city's residents deserve.
+          </p>
+          <h2>Shifting the property tax burden</h2>
+          <p>
+            Burnaby has some of the lowest property taxes in Canada, less than a
+            third of the national average. We currently make up the shortfall by
+            charging astronomical amounts to new developments &mdash;
+            <strong>over $80,000 per unit</strong> in some cases. Not only does
+            this discourage new housing from being built, it's also an
+            unsustainable funding source as it requires a constant stream of new
+            developments to fund critical infrastructure.
+          </p>
+          <p>
+            I will work to shift this tax burden &mdash; which currently falls
+            on higher density housing where the most people actually live
+            &mdash; to the mansions owned by the wealthiest among us, to make
+            them also pay their fair share.
+          </p>
+          <h2>Zoning and the missing middle</h2>
+          <p>
+            Burnaby has a lot of massive, expensive single-family homes, and a
+            lot of smaller, more affordable apartments high rise buildings, but
+            not a lot in between.
+          </p>
+          <p>
+            This is the missing-middle in our housing - medium density
+            developments that help make our suburban neighbourhoods more
+            vibrant, and provide affordable housing options for families.
+          </p>
+          <p>
+            The city currently makes these developments difficult to build due
+            to high permitting costs and long, drawn-out consultation processes.
+            I will work to streamline this process so that we can build the
+            housing this city needs.
+          </p>
+          <h2>Mixed-use developments</h2>
+          <p>
+            Providing places for people to live is only part of the story. To
+            build truly vibrant communities we need neighbourhoods where people
+            can work and play, not just live. I will work on updating our
+            archaic zoning bylaws to allow more mixed-use neighbourhoods which
+            have been proven to improve quality of life in parts of Europe and
+            Asia.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section id="education" class="content-right">
+      <div class="aside aside-right">
+        <div class="aside-content">
+          <h1>Education</h1>
+          <p>
+            The next generation of Burnabians start today, and we need to
+            provide them with a strong foundation. In this age of social media,
+            AI, and rampant misinformation, we must do more to arm them with the
+            tools they need to thrive.
+          </p>
+          <h2>Daycares</h2>
+          <p>
+            As any new parent will know, getting a child into daycare is a
+            Herculean task, often requiring getting onto waitlists
+            <strong>before conception</strong>. While provincial legislation and
+            subsidies have brought down the cost of daycare, there is still the
+            simple issue of there <strong>not being enough spaces</strong>.
+          </p>
+          <p>
+            One of the main hurdles in providing more daycare spots is the long
+            and complicated permitting process involved in setting up new child
+            care facilities. I will work to streamline this process while
+            keeping the necessary checks and balances in place, as well as open
+            up new city-run daycare locations that are accessible for
+            <strong>everyone</strong>.
+          </p>
+          <h2>School lunches</h2>
+          <p>
+            While Burnaby currently has a program to subsidize school lunches in
+            some of its schools, the funding largely depends on charitable
+            contributions from parents and non-profit organisations. No child
+            deserves to go hungry, especially while they are trying to learn,
+            and the current system disproportionately affects lower-income
+            families.
+          </p>
+          <p>
+            I will work to secure full funding for the school lunches program in
+            Burnaby, so that <strong>every</strong> student will have access to
+            a free school lunch should they need it.
+          </p>
+          <h2>AI policy in schools</h2>
+          <p>
+            The pervasive use of AI is the biggest emerging threat to education
+            today. While it's unrealistic to expect students to avoid AI use
+            entirely, we do have the responsibility to guide the new generation
+            in this changing world. In addition to the AI policies already in
+            place, I will work with the school board to expand training programs
+            for educators so that they can continue to be effective in this new
+            age.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section id="transportation">
+      <div class="aside aside-left">
+        <div class="aside-content">
+          <h1>Transportation</h1>
+          <p>
+            Burnaby has made some progress in recent years in making our streets
+            safer, but ultimately transportation planning still puts cars first.
+            As our city grows, we need to put <strong>people</strong>, not cars,
+            first. I will work to make the streets accessible and pleasant for
+            everyone, not just those in cars.
+          </p>
+          <h2>Multi-modal transit</h2>
+          <p>
+            I will work with Translink and provincial authorities to reclaim
+            some of the copious amount of space we have given over to cars in
+            this city, and return that space back to the people in the form of
+            wider sidewalks, separated bike lanes, and transit priority
+            corridors.
+          </p>
+          <p>
+            Not only does this allow us to use more of the street space we
+            <strong>all</strong> pay for, a single bike or bus lane also move
+            over <strong>four times</strong> as many people as a car lane, at a
+            fraction of the cost to build. By providing good alternative forms
+            of transport across the city, it makes it cheaper and faster for
+            <strong>everyone</strong> to get around.
+          </p>
+          <h2>Traffic calming and enforcement</h2>
+          <p>
+            When it comes to traffic safety, a small number of reckless and
+            impatient drivers make the streets feel hostile and unpleasant for
+            everyone else. I will work to add <strong>physical</strong> traffic
+            calming measures such as speed bumps as well as the necessary
+            enforcement along with it, to discourage antisocial behaviour on our
+            roads.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section id="community" class="content-right">
+      <div class="aside aside-right">
+        <div class="aside-content">
+          <h1>Community</h1>
+          <p>
+            Burnaby has one of the most diverse demographics in the region, with
+            over 2 in 3 people being a visible minority.
+          </p>
+          <p>
+            In our digital age it's increasingly important that we provide
+            opportunities for people to connect in person via access to public
+            spaces and events.
+          </p>
+          <h2>Parks and recreation</h2>
+          <p>
+            Burnaby's parks are something we can all be proud of.
+            <strong>Over 25%</strong> of the land in Burnaby is park space, one
+            of the highest in North America.
+          </p>
+          <p>
+            I will work to expand the facilities offered in our public parks and
+            community spaces and make them easier to access so that
+            <strong>everyone</strong> has the chance to experience the best that
+            Burnaby has to offer.
+          </p>
+          <h2>Public events</h2>
+          <p>
+            The year-over-year record attendance for Burnaby's free public
+            events, such as <em>Central StreetFest</em>, <em>Hat's Off Day</em>,
+            and various <em>Car Free Days</em>, have shown a clear demand for
+            in-person community events.
+          </p>
+          <p>
+            As neighbouring municipalities pull back funding for public events,
+            Burnaby has a unique opportunity to establish itself as a cultural
+            hub for the region. I will increase our investments into hosting
+            these events, and work with local neighbourhood associations to
+            establish new occasions for people to meet and mingle.
+          </p>
+        </div>
+      </div>
+    </section>
+  </body>
 </html>
